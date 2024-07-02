@@ -3,7 +3,7 @@ import './App.css';
 import{BrowserRouter,Route,Router,Routes} from 'react-router-dom';
 import Nav from './component/navbar.jsx'
 import AboutUs from './component/about.jsx';
-import SignUp from './component/signup.jsx';
+import SignUp from './component/signin.jsx';
 import Login from './component/login.jsx';
 import Error from './component/error.jsx';
 import Contactus from './component/contactus.jsx';

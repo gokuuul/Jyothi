@@ -85,7 +85,7 @@ function Sign ()
             </div>
             <div class="g">
                 <p>If you have already registered </p>
-                <a href="/Login"  style={{"color":"black"}}>Login</a>
+                <a href="./Login"  style={{"color":"black"}}>Login</a>
                 <h1>{error}</h1>
             </div>
 

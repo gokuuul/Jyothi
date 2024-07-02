@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { useState } from 'react';
-function Login()
+function Login ()
 
     {
         const[email,setEmail]=useState('');
@@ -20,12 +20,12 @@ function Login()
 
             })
             console.log(response);
-          }
+        }
             
             
         
     return(
-        <div class="contents" style={{"backgroundImage":'url(m.jpg)',"color":"white",height: '100vh'}}>
+        <div class="contents" style={{"backgroundImage":'url(lala.jpg)',"color":"white",height: '100vh'}}>
         <div class="content" style={{"display": "list-item",
                 "justifyContent": "center",
                 marginInline:'auto',
@@ -53,14 +53,14 @@ function Login()
                 "paddingTop": "10px"}}><button onClick={handleLogin}>login</button></div>
         <div class="d">
             <p>If you have not registered</p>
-            <a href='/Sign'> style={{"color":"lavender"}}>Signup</a>
+            <a href="./Signup" style={{"color":"lavender"}}>Signup</a>
         </div>
         <div>
             
         </div>
     </div>
     </div>
-    );
+    )
+}
 
-    }
 export default Login;

@@ -25,7 +25,7 @@ function Login ()
             
         
     return(
-        <div class="contents" style={{"backgroundImage":'url(lala.jpg)',"color":"white",height: '100vh'}}>
+        <div class="contents" style={{"backgroundImage":'url(https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)',"color":"white",height: '100vh'}}>
         <div class="content" style={{"display": "list-item",
                 "justifyContent": "center",
                 marginInline:'auto',

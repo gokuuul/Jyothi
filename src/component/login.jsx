@@ -25,7 +25,7 @@ function Login ()
             
         
     return(
-        <div class="contents" style={{"backgroundImage":'url()',"color":"white",height: '100vh'}}>
+        <div class="contents" style={{"backgroundImage":'url()',"color":"black",height: '100vh'}}>
         <div class="content" style={{"display": "list-item",
                 "justifyContent": "center",
                 marginInline:'auto',

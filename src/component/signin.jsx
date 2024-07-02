@@ -1,15 +1,15 @@
 import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import axios from "axios";
 function Sign ()
     {
-        const Navigate=useNavigate();
+        const Navigate =useNavigate();
         const[name,setName]=useState('');
         const[email,setEmail]=useState('');
         const[pass1,setPass1]=useState('');
         const[pass2,setPass2]=useState('');
-        const[error,setError]=useState('signed in');
+        const[error,setError]=useState('');
         function handleChange1(e){
             setPass1(e.target.value)
 
@@ -20,18 +20,19 @@ function Sign ()
         function handleChangename(e){
             setName(e.target.value)
         }
-        function handleChangeemail(e){
+        function handleChangeEmail(e){
             setEmail(e.target.value)
         }
         function handleSign(){
             if(pass1==pass2){
-                setError('Signed in ')
-                // Navigate('/login')
-                axios.post('http://localhost:5000/Sign',{
+                setError('Signed in')
+                // Navigate('/Login')
+                axios.post('http://localhost:5000/Signup',{
                     name,
                     email,
                     pass1
                 })
+
 
             }
                 else{
@@ -39,7 +40,7 @@ function Sign ()
                 }
         }
     return(
-        <div class="all" style={{"backgroundImage":'url(E.jpg)',height:"100vh"}}>
+<div class="contents" style={{"backgroundImage":'url(lala.jpg)',"color":"white",height: '100vh'}}>
         <div class="content" style={{"display": "list-item",
         "justifyContent": "center",
         "paddingLeft": "40%",
@@ -61,7 +62,7 @@ function Sign ()
                 "paddingTop": "10px",
                 "justifyContent": "space-between"}}>
                 <label for="">Email</label>
-                <input type="Email" placeholder="Enter the email"  onChange={handleChangeemail}/>
+                <input type="Email" placeholder="Enter the email" onChange={handleChangeEmail}/>
             </div>
             <div class="d" style={{"padding": "auto",
                 "display": "flex",
@@ -84,14 +85,13 @@ function Sign ()
             </div>
             <div class="g">
                 <p>If you have already registered </p>
-                <a href="./login"  style={{"color":"black"}}>Login</a>
+                <a href="./Login"  style={{"color":"black"}}>Login</a>
                 <h1>{error}</h1>
             </div>
 
         </div>
     </div>
-    </div>
-
+</div>
 
     )
 }

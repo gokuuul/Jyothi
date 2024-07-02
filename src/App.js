@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import{BrowserRouter,Route,Router,Routes} from 'react-router-dom';
-import Nav from './component/navbar.jsx'
-import AboutUs from './component/about.jsx';
+import Nav from './component/Navbar.jsx'
+import AboutUs from './component/About.jsx';
 import SignUp from './component/signin.jsx';
 import Login from './component/login.jsx';
 import Error from './component/error.jsx';
-import Contactus from './component/contactus.jsx';
+
 function App() {
   return (
     
@@ -16,7 +16,6 @@ function App() {
       <Route path='/SignUp' element={<SignUp />}></Route>
       <Route path='/Login' element={<Login />}></Route>
       <Route path='/Aboutus' element={<AboutUs />}></Route>
-      <Route path='/Contactus' element={<Contactus />}></Route>
       <Route path='/' element={<Nav />}></Route>
       <Route path='/*' element={<Error />}></Route>
     </Routes>

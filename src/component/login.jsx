@@ -25,7 +25,7 @@ function Login ()
             
         
     return(
-        <div class="contents" style={{"backgroundImage":'url()',"color":"black",height: '100vh'}}>
+        <div class="contents" style={{"backgroundImage":'url(https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9980.jpg?size=626&ext=jpg&ga=GA1.1.2113030492.1719878400&semt=ais_user)',"color":"white",height: '100vh'}}>
         <div class="content" style={{"display": "list-item",
                 "justifyContent": "center",
                 marginInline:'auto',

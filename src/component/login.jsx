@@ -53,7 +53,7 @@ function Login ()
                 "paddingTop": "10px"}}><button onClick={handleLogin}>login</button></div>
         <div class="d">
             <p>If you have not registered</p>
-            <a href="./signin" style={{"color":"lavender"}}>Signup</a>
+            <a href="./Sign" style={{"color":"lavender"}}>Signup</a>
         </div>
         <div>
             

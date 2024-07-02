@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { useState } from 'react';
-export default function Login()
+function Login()
 
     {
         const[email,setEmail]=useState('');
@@ -63,3 +63,4 @@ export default function Login()
     );
 
     }
+export default Login;

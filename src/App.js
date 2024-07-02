@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/Sign' element={<Sign />}></Route>
-        <Route path='/login' element={<Login />}></Route>
+        <Route path='/Login' element={<Login />}></Route>
         <Route path='/About' element={<About />}></Route>
         <Route path='/' element={<Navbar />}></Route>
         <Route path='/*' element={<Error />}></Route>
